@@ -1,112 +1,44 @@
-```
- git log -p
-```
+# Git & GitHub Advanced
 
-```
-commit ed30a0ada552e02d378d731f00dc67ddbb448728 (HEAD -> master)
-Author: asionsolver <asionsolver274@gmail.com>
-Date: Wed Mar 4 22:29:52 2026 +0600
+Welcome to the **Git & GitHub Advanced** guide! This repository is designed to take you from a **Beginner** to an **Advanced** level in just a few hours.
 
-    master --> First in HOME
-
-diff --git a/HOME.md b/HOME.md
-new file mode 100644
-index 0000000..f675854
---- /dev/null
-+++ b/HOME.md
-@@ -0,0 +1 @@
-+# First
-```
-
-```
-git log --stat
-```
-
-```
-
-commit ed30a0ada552e02d378d731f00dc67ddbb448728 (HEAD -> master)
-Author: asionsolver <asionsolver274@gmail.com>
-Date: Wed Mar 4 22:29:52 2026 +0600
-
-    master --> First in HOME
-
-HOME.md | 1 +
-1 file changed, 1 insertion(+)
-```
+Everything is written in **Easy English** with real-life examples to help you understand "Why", "How", and "When" to use these commands.
 
 ---
 
-````markdown
-# গিট লগ (Git Log) এর বিস্তারিত ব্যবহার
+## 🎯 Goal
 
-গিট রিপোজিটরির পরিবর্তনের ইতিহাস দেখার জন্য `git log` কমান্ডটি অত্যন্ত শক্তিশালী। বিশেষ করে কোড রিভিউ বা পরিবর্তনের ব্যাপ্তি বোঝার জন্য নিচের দুটি ফ্ল্যাগ (Flag) সবচেয়ে বেশি ব্যবহৃত হয়।
-
----
-
-## ১. `git log -p` (Patch বা বিস্তারিত পরিবর্তন)
-
-এই কমান্ডটি প্রতিটি কমিটে ঠিক কী কী কোড বা লাইন যুক্ত হয়েছে অথবা মুছে ফেলা হয়েছে, তার একটি বিস্তারিত চিত্র প্রদান করে।
-
-### আউটপুটের বৈশিষ্ট্য:
-
-- এটি **`+` (প্লাস)** চিহ্ন দিয়ে নতুন যুক্ত হওয়া লাইন নির্দেশ করে।
-- এটি **`-` (বিয়োগ)** চিহ্ন দিয়ে মুছে ফেলা লাইন নির্দেশ করে।
-
-### উদাহরণ বিশ্লেষণ:
-
-আউটপুটে যদি নিচের মতো অংশ দেখা যায়:
-
-```diff
-@@ -0,0 +1 @@
-+# First
-```
-````
-
-**ব্যাখ্যা:** এর অর্থ হলো `HOME.md` ফাইলে একটি নতুন লাইন যুক্ত হয়েছে এবং লাইনটি হলো `# First`।
-
-### কখন ব্যবহার করবেন?
-
-- যখন আপনি নিখুঁতভাবে কোড রিভিউ করতে চান।
-- ঐতিহাসিকভাবে ঠিক কোন লাইনটি কখন এবং কেন পরিবর্তন হয়েছে তা দেখার জন্য।
+- **Master Version Control**: Learn how to track changes, collaborate, and fix mistakes.
+- **Professional Workflow**: Understand how teams work (PRs, Code Reviews, Branching).
+- **Hands-on Practice**: Real commands and scenarios you can try immediately.
 
 ---
 
-## ২. `git log --stat` (Statistics বা সারসংক্ষেপ)
+## 📚 Topic Index
 
-এই কমান্ডটি ফাইলের ভেতরের লাইনগুলো না দেখিয়ে শুধুমাত্র পরিবর্তনের একটি পরিসংখ্যান বা সামারি দেখায়।
+### 🟢 Level 1: The Basics (Must Know)
 
-### আউটপুটের বৈশিষ্ট্য:
+| Topic          | Description | Link                               |
+| :------------- | :---------- | :--------------------------------- |
+| **Git Basics** | Log, Diff   | [Read Guide](/doc/basic/README.md) |
 
-- এটি সংক্ষেপে দেখায় কোন কোন ফাইল পরিবর্তন হয়েছে।
-- প্রতিটি ফাইলে কতগুলো লাইন ইনসার্ট (`+`) বা ডিলিট (`-`) হয়েছে তার সংখ্যা দেখায়।
+## 🛠 Project Guidelines
 
-### উদাহরণ বিশ্লেষণ:
+This repository follows professional standards. Check these files to understand how to maintain a healthy project:
 
-আউটপুটে যদি নিচের তথ্যটি থাকে:
+- **Contributing**: [CONTRIBUTING.md](CONTRIBUTING.md) (How to join)
+- **Security**: [SECURITY.md](SECURITY.md) (Reporting vulnerabilities)
+- **Code of Conduct**: Be respectful and professional.
 
-```text
-HOME.md | 1 +
-1 file changed, 1 insertion(+)
+---
+
+## 🚀 Quick Start
+
+Clone this repo to start practicing:
+
+```bash
+git clone https://github.com/your-username/git-advance.git
+cd git-advance
 ```
 
-**ব্যাখ্যা:** এর অর্থ হলো মাত্র ১টি ফাইল পরিবর্তিত হয়েছে এবং সেখানে ১টি লাইন যুক্ত হয়েছে (তবে লাইনের বিষয়বস্তু এখানে প্রদর্শিত হয় না)।
-
-### কখন ব্যবহার করবেন?
-
-- যখন দ্রুত কোনো কমিটে কতটুকু কাজ হয়েছে তার একটি ধারণা নিতে চান।
-- যখন বিস্তারিত কোড দেখার প্রয়োজন নেই, শুধু ফাইলের তালিকা ও পরিবর্তনের পরিমাণ জানা দরকার।
-
----
-
-## একনজরে পার্থক্য
-
-| কমান্ড           | কাজ                                      | ব্যবহারের ক্ষেত্র             |
-| :--------------- | :--------------------------------------- | :---------------------------- |
-| `git log -p`     | বিস্তারিত কোড পরিবর্তন (Diff) দেখায়।     | গভীর বিশ্লেষণ ও কোড রিভিউ।    |
-| `git log --stat` | ফাইলের নাম ও লাইনের সংখ্যার হিসাব দেখায়। | দ্রুত ওভারভিউ বা সামারি দেখা। |
-
----
-
-> [!TIP]
-> **প্রো টিপ:** আপনি চাইলে দুটি সুবিধা একসাথে পেতে `git log -p --stat` ব্যবহার করতে পারেন। এটি আপনাকে একই সাথে পরিসংখ্যান এবং বিস্তারিত পরিবর্তন পর্যায়ক্রমে দেখাবে।
-> ]
+Happy Coding!
