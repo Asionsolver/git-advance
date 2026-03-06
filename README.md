@@ -22,14 +22,6 @@ Everything is written in **Easy English** with real-life examples to help you un
 | :------------- | :---------- | :--------------------------------- |
 | **Git Basics** | Log, Diff   | [Read Guide](/doc/basic/README.md) |
 
-## 🛠 Project Guidelines
-
-This repository follows professional standards. Check these files to understand how to maintain a healthy project:
-
-- **Contributing**: [CONTRIBUTING.md](CONTRIBUTING.md) (How to join)
-- **Security**: [SECURITY.md](SECURITY.md) (Reporting vulnerabilities)
-- **Code of Conduct**: Be respectful and professional.
-
 ---
 
 ## 🚀 Quick Start
