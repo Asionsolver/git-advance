@@ -5,3 +5,5 @@
 ## Login - Password Reset Functionality
 
 ## Login - Social Media Authentication Integration
+
+## Login - Account Lockout Mechanism After Multiple Failed Attempts
