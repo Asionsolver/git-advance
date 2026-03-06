@@ -7,3 +7,5 @@
 ## Login - Social Media Authentication Integration
 
 ## Login - Account Lockout Mechanism After Multiple Failed Attempts
+
+## Login - User Session Management and Security
